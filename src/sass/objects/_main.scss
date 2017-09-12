@@ -1,0 +1,30 @@
+.column {
+  padding: 5px;
+  background: LightSteelBlue;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Grid--1of4 {
+  margin: 15px;
+  width: calc(25% - 30px);
+  @media (max-width: 991px) {
+    width: calc(50% - 30px)
+  }
+  @media (max-width: 768px) {
+    width: calc(100% - 30px)
+  }
+}
+
+.Grid--1of3 {
+  margin: 15px 15px 7px;
+  width: calc(33.333333% - 30px);
+  @media (max-width: 991px) {
+    width: calc(50% - 30px)
+  }
+  @media (max-width: 768px) {
+    width: calc(100% - 30px)
+  }
+}

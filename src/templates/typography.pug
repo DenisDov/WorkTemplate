@@ -1,0 +1,34 @@
+doctype html
+html
+	head
+		- var page_name = "Typography Page"
+		include ./includes/head.pug
+	body
+		include ./includes/header.pug
+
+		main
+			section
+				.container
+					
+					h1 H1 Open Sans
+					h2 H2 Open Sans
+					h3 H3 Open Sans
+					h4 H4 Open Sans
+					h5 H5 Open Sans
+					h6 H6 Open Sans
+					p corrupti quibusdam cum quos repellat perspiciatis similique, illo!
+
+				.container
+					.row
+
+						.col-md-12
+							div(style="margin-bottom: 15px")
+								button.btn Show result
+							div(style="margin-bottom: 15px")
+								button.btn.btn--lgreen next step
+							div(style="margin-bottom: 15px")
+								button.btn.btn--dgreen next
+
+
+
+		include ./includes/footer.pug

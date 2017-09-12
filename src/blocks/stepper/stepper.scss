@@ -1,0 +1,27 @@
+.stepper {
+    display: flex;
+    &__button {
+        cursor: pointer;
+        padding: 5px 10px;
+        border: none;
+        font-size: 0;
+        background: none;
+        path {
+            transition: fill 50ms ease
+        }
+        &:hover path {
+            fill: $main
+        }
+        &:active path {
+            fill: darken($main, 10%)
+        }
+    }
+    &__input {
+        border-radius: 7px;
+        border: 1px solid #afafaf;
+        box-shadow: none;
+        width: 95px;
+        text-align: center;
+        font-size: 24px;
+    }
+}

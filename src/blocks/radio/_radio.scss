@@ -1,0 +1,63 @@
+$checkbox-background: #E6E6E6;
+$checkbox-hover: #CCCCCC;
+$checkbox--primary: #0083c8;
+
+// Basic control styles
+.control-radio {
+  font-weight: 400;
+	// display: block;
+	position: relative;
+	padding-left: 30px;
+	// margin-bottom: 15px;
+	cursor: pointer;
+  user-select: none;
+	input[type="radio"] {
+		position: absolute;
+		z-index: -1;
+		opacity: 0
+	}
+}
+
+// Hide default browser input
+// Custom control
+.control-radio__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+  border-radius: 50%;
+	background: $checkbox-background;
+	// Hover
+	.control-radio:hover input ~ & {
+		background: $checkbox-hover
+	}
+	// Checked
+	.control-radio input:checked ~ & {
+		background: $checkbox--primary
+	}
+	// Hide default browser input
+	.control-radio input:disabled ~ & {
+		background: $checkbox-background;
+		opacity: 0.6;
+		pointer-events: none
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		display: none; // Hide check
+		.control-radio input:checked ~ & {
+			display: block; // Show check
+		}
+		// Checkbox tick
+		label & {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #fff;
+		}
+	}
+}

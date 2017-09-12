@@ -1,0 +1,104 @@
+.btn {
+	appearance: none;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	font-family: $font-secondary;
+	font-weight: normal;
+	line-height: normal;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 13px 33px;
+	font-size: 16px;
+	background: $main;
+	border-color: $main;
+	color: white;
+	text-transform: uppercase;
+	outline: none !important;
+	transition: all 100ms ease-out;
+    width: 263px;
+	&:hover {
+		color: $main;
+		background: white;
+		border-color: $main;
+		text-decoration: none;
+	}
+	&:focus {
+		color: $main;
+        background: white;
+        outline: none !important;
+		border-color: $main;
+		text-decoration: none;
+	}
+	&:active {
+		background: white;
+		border-color: $main;
+		transform: translateY(1px);
+	}
+	&.btn--lgreen {
+		background: $lgreen;
+		border-color: $lgreen;
+		&:hover {
+            color: $lgreen;
+			background: white;
+			border-color: $lgreen;
+		}
+		&:focus {
+			color: $lgreen;
+			background: white;
+			border-color: $lgreen;
+		}
+		&:active {
+			color: $lgreen;
+			background: white;
+			border-color: $lgreen;
+		}
+	}
+	&.btn--dgreen {
+		background: $dgreen;
+		border-color: $dgreen;
+		&:hover {
+            color: $dgreen;
+			background: white;
+			border-color: $dgreen;
+		}
+		&:focus {
+			color: $dgreen;
+			background: white;
+			border-color: $dgreen;
+		}
+		&:active {
+			color: $dgreen;
+			background: white;
+			border-color: $dgreen;
+		}
+	}
+	// &.btn--bordered {
+	// 	background: transparent;
+	// 	border-color: $main;
+	// 	border-width: 1px;
+	// 	color: $main;
+	// 	&:hover {
+	// 		background: $main;
+	// 		color: #fff;
+	// 	}
+	// 	&:active {
+	// 		background: darken($main, 5%);
+	// 	}
+	// 	&.btn--bordered--accent {
+	// 		color: $accent;
+	// 		border-color: $accent;
+	// 		&:hover {
+	// 			background: $accent;
+	// 			color: #fff;
+	// 		}
+	// 		&:active {
+	// 			background: darken($accent, 5%);
+	// 		}
+	// 	}
+	// }
+}

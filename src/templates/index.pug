@@ -1,0 +1,40 @@
+doctype html
+html
+	head
+		- var page_name = "Main Page"
+		include ./includes/head.pug
+	body
+		include ./includes/header.pug
+
+		main
+			section
+				.container
+					include ../blocks/breadcrumbs/_breadcrumbs.pug
+					
+
+					h1 Heading
+					h2 Heading
+					h3 Heading
+					h4 Heading
+					h5 Heading
+					h6 Heading
+					p corrupti quibusdam cum quos repellat perspiciatis similique, illo!
+
+
+						
+				.container
+					.row
+
+							
+						.col-sm-6
+							button.btn Show result
+							button.btn.btn--lgreen next step
+							button.btn.btn--second next
+
+						.col-sm-6
+							button.btn.btn--bordered Show result
+							button.btn.btn--bordered.btn--bordered--accent Show result
+
+					include ./components/pagination.pug
+
+		include ./includes/footer.pug

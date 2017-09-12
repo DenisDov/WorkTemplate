@@ -1,0 +1,21 @@
+.bread-crumbs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &__item {
+      font-size: 12px;
+      color: #7c7c7c;
+    }
+    &__current {
+      font-size: 12px;
+      color: #7c7c7c;
+    }
+    li {
+        display: inline-block;
+      +li:before {
+        padding: 0 5px;
+        color: #7c7c7c;
+        content: "/\00a0";
+        }
+    }
+
+}
