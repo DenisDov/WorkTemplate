@@ -1,30 +1,28 @@
 {
-  "name": "X",
+  "name": "startedtemplate",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clear-cache": "gulp-cache.clearAll(); echo \"cache cleared\" && exit 1",
-    "clean": "del('./build'); console.log('Cleaned build');"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "author",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
-    "browser-sync": "^2.17.3",
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
-    "gulp-cache": "^0.4.5",
-    "gulp-prettify": "^0.4.0",
-    "gulp-imagemin": "^3.0.3",
+    "gulp-cache": "^0.4.6",
+    "gulp-prettify": "^0.5.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-notify": "^3.0.0",
-    "gulp-postcss": "^6.2.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-pug": "^3.1.0",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.1.1",
-    "imagemin-pngquant": "^4.2.0",
-    "rucksack-css": "^0.9.1",
-    "run-sequence": "^1.2.2"
+    "imagemin-pngquant": "^5.0.1",
+    "rucksack-css": "^1.0.2",
+    "run-sequence": "^2.2.0"
   }
 }
