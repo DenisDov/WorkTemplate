@@ -1,5 +1,3 @@
-# WorkTemplate
-
 ## Installation
 
 ```console
