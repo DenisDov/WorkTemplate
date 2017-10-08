@@ -1,0 +1,5 @@
+## Installation
+
+```console
+$ yarn install
+```
